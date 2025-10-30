@@ -3,10 +3,714 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <title>Prolife Hospital</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="prolife-home">
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./img/prolife-logo.png" alt="Prolife Logo" />
+        </div>
+
+        <nav id="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./story.html">Our Story</a></li>
+            <li><a href="./team.html">Our Teams</a></li>
+            <li><a href="https://prolifefertility.com/">Fertility</a></li>
+            <li class="dropdown">
+              <a href="#">Services <span class="arrow">▾</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Pregnancy / Maternity</a></li>
+                <li class="sub-dropdown">
+                  <a href="#">Obstetrics <span class="arrow-right">▸</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Normal Delivery</a></li>
+                    <li><a href="#">C-Section</a></li>
+                  </ul>
+                </li>
+                <li class="sub-dropdown">
+                  <a href="#">Gynecology <span class="arrow-right">▸</span></a>
+                  <ul class="sub-menu">
+                    <li><a href="#">PCOS Treatment</a></li>
+                    <li><a href="#">Fibroid Surgery</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Fetal Medicine</a></li>
+                <li><a href="#">Ultrasound</a></li>
+                <li><a href="#">Surgery and Procedures</a></li>
+                <li><a href="#">Lab</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./blogs.html">Blogs</a></li>
+          </ul>
+        </nav>
+
+        <div class="pharmacy-btn">
+          <button>PHARMACY</button>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+    <section class="master-section">
+      <div class="master-section-container">
+        <div class="master-section-content">
+          <h1 class="master-section-title">Prolife Hospitals</h1>
+          <p class="master-section-desc">
+            As a multi-specialty hospital in Chennai with a distinguished
+            Maternity and Gynecology department, Prolife Hospitals strives to
+            provide the best care for its patients.
+          </p>
+          <button class="master-section-btn">Book an Appointment →</button>
+        </div>
+
+        <div class="master-section-image">
+          <img src="./img/hero1.png" alt="Happy Family" />
+        </div>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="section-two-container">
+        <div class="section-two-images">
+          <div class="section-two-main-img">
+            <img src="./img/home-section2img.png" alt="Family" />
+          </div>
+        </div>
+
+        <div class="section-two-content">
+          <span class="section-two-subtitle">• About us</span>
+          <h2 class="section-two-title">Welcome to Excellence in Care</h2>
+          <p class="section-two-desc">
+            Pedia therapy provides a range of healthcare services specializing
+            mainly in maternity, fertility and gynecology. We’re inspired to
+            move the journey ahead together, as a combined effort of family,
+            comfort, and care.
+          </p>
+          <p class="section-two-desc">
+            As one of the best fertility hospitals in Chennai, we’re equipped
+            with first-class technology & a full network for healthy,
+            encouraging, comfortable maternity care.
+          </p>
+          <button class="section-two-btn">Learn More →</button>
+        </div>
+      </div>
+    </section>
+    <section class="gynaecology-section">
+      <h2 class="section-title">EXPERT GYNAECOLOGY FOR EVERY WOMAN</h2>
+      <p class="section-subtitle">
+        Do you have a delicate issue you need help with?
+      </p>
+
+      <div class="gynaecology-container">
+        <!-- Left Column -->
+        <div class="gynaecology-column left">
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-hospital"></i>
+            </div>
+            <div>
+              <h3>Operation Theaters</h3>
+              <p>
+                Well-equipped modular operation theatres for major and minor
+                surgeries.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-user-nurse"></i>
+            </div>
+            <div>
+              <h3>Personalized Wards</h3>
+              <p>
+                Luxurious rooms with air-conditioning, private consulting space,
+                and modern amenities.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <div>
+              <h3>Integrated Maternity Care</h3>
+              <p>
+                End-to-end maternity services supported by a team of experts.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Doctor Image -->
+        <div class="doctor-image">
+          <img src="./img/section3-home.png" alt="Doctor" />
+        </div>
+
+        <!-- Right Column -->
+        <div class="gynaecology-column right">
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-vials"></i>
+            </div>
+            <div>
+              <h3>Diagnostic Labs</h3>
+              <p>
+                Comprehensive diagnostic services with advanced technology and
+                accuracy.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <h3>24/7 ATM and Pharmacy</h3>
+              <p>
+                Round-the-clock access to healthcare facilities and financial
+                convenience.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="icon-circle">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div>
+              <h3>Affordability</h3>
+              <p>
+                Best-in-class care at an affordable cost, making healthcare
+                accessible for all.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-three">
+      <div class="section-three-container">
+        <div class="section-three-header">
+          <h3 class="section-three-subtitle">YOUR GUIDE TO BETTER HEALTH</h3>
+          <p class="section-three-desc">Making a Difference Together</p>
+        </div>
+
+        <div class="section-three-cards">
+          <div class="section-three-card">
+            <img src="./img/h1.jpg" alt="Preparing for labour" />
+            <div class="section-three-overlay">
+              <h4>PREPARING FOR LABOUR - THINGS YOU SHOULD KNOW.</h4>
+              <button>View More</button>
+            </div>
+          </div>
+
+          <div class="section-three-card">
+            <img src="./img/h2.webp" alt="Laparoscopic procedure" />
+            <div class="section-three-overlay">
+              <h4>WHEN DO YOU NEED TO GO FOR A LAPAROSCOPIC PROCEDURE</h4>
+              <button>View More</button>
+            </div>
+          </div>
+
+          <div class="section-three-card">
+            <img src="./img/h3.webp" alt="Menopausal" />
+            <div class="section-three-overlay">
+              <h4>HOW TO IDENTIFY YOU ARE MENOPAUSAL</h4>
+              <button>View More</button>
+            </div>
+          </div>
+
+          <div class="section-three-card">
+            <img src="./img/h4.jpg" alt="Hormonal imbalance" />
+            <div class="section-three-overlay">
+              <h4>BASIC DO’S AND DON’T FOR HORMONAL IMBALANCE</h4>
+              <button>View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="specialization-section">
+      <div class="specialization-container">
+        <h2 class="specialization-title">OUR SPECIALIZATION</h2>
+        <p class="specialization-subtitle">
+          Your one-stop destination for all your healthcare needs!
+        </p>
+
+        <div class="specialization-grid">
+          <!-- 1 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s1.jpg" alt="Maternity & Gynaecology" />
+            </div>
+            <div class="card-label">Maternity & Gynaecology</div>
+            <p class="card-text">
+              Prolife, a leading maternity and gynecology hospital, is devoted
+              to providing expert care.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 2 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s2.jpg" alt="Pediatrics" />
+            </div>
+            <div class="card-label">Pediatrics</div>
+            <p class="card-text">
+              Prolife offers pediatric and neonatal intensive care with expert
+              specialists.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 3 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s3.jpg" alt="Cosmetology" />
+            </div>
+            <div class="card-label">Cosmetology</div>
+            <p class="card-text">
+              Professional cosmetology treatments enhancing confidence and
+              beauty.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 4 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s4.jpg" alt="General Surgery" />
+            </div>
+            <div class="card-label">General Surgery</div>
+            <p class="card-text">
+              Comprehensive surgical solutions with advanced technology and
+              care.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 5 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s5.jpg" alt="Urology" />
+            </div>
+            <div class="card-label">Urology</div>
+            <p class="card-text">
+              Prolife’s urology department provides cutting-edge treatment and
+              diagnostics.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 6 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s6.jpg" alt="Gastroenterology" />
+            </div>
+            <div class="card-label">Gastroenterology</div>
+            <p class="card-text">
+              Specialized care for digestive health using modern diagnostic
+              tools.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 7 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s7.jpg" alt="Orthopaedics" />
+            </div>
+            <div class="card-label">Orthopaedics</div>
+            <p class="card-text">
+              Expert bone and joint care for all ages, ensuring mobility and
+              comfort.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 8 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s8.jpg" alt="General Medicine" />
+            </div>
+            <div class="card-label">General Medicine</div>
+            <p class="card-text">
+              Providing medical care and preventive solutions for holistic
+              health.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+
+          <!-- 9 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s9.jpg" alt="Dermatology" />
+            </div>
+            <div class="card-label">Dermatology</div>
+            <p class="card-text">
+              Prolife’s dermatology specialists ensure optimal skin health and
+              aesthetics.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+          <!-- 10 -->
+          <div class="specialization-card">
+            <div class="card-img">
+              <img src="./img/s10.jpg" alt="Dermatology" />
+            </div>
+            <div class="card-label">Anesthesiology</div>
+            <p class="card-text">
+              Prolife’s dermatology specialists ensure optimal skin health and
+              aesthetics.
+            </p>
+            <a href="#" class="learn-more">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <h2>Our Dedicated Doctors</h2>
+      <p class="doc-sub-tit">Meet our experienced professionals</p>
+      <div class="doc-section-container">
+        <!-- Doctor 1 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d1.png"
+            alt="Dr. Sarah Johnson"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.NELLAIYAPPAN</h3>
+            <p>ORTHOPEDICIAN</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d2.png"
+            alt="Dr. Ching Ming Yu"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.KUMANAN</h3>
+            <p>ONCOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d3.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.HARI PRAKASH</h3>
+            <p>ANESTHETIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 4 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d4.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.BALA</h3>
+            <p>ONCOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 5 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d5.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.SHALINI</h3>
+            <p>ANESTHETIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 6 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d6.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.PAULIA DEVI</h3>
+            <p>GENERAL SURGEON</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 7 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d7.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.SATHYA MOORTHY</h3>
+            <p>GENERAL PHYSICIAN</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 8 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d8.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.NITHYA PRIYAN</h3>
+            <p>ANESTHETIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 9 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d9.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.SOORIYA.S</h3>
+            <p>DERMATOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 10 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d10.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.SUJITHA.R</h3>
+            <p>GYNECOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 11 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d11.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>Dr.Thamarai</h3>
+            <p>GYNECOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 12 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d12.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.UMA MAHESHWARI</h3>
+            <p>PAEDIATRICIAN</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 13 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d13.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>Dr.Varshini</h3>
+            <p>GYNECOLOGIST</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+        <!-- Doctor 14 -->
+        <div class="doc-section-card">
+          <img
+            src="./img/d14.png"
+            alt="Dr. Emily Carter"
+            class="doc-section-img"
+          />
+          <div class="doc-section-overlay">
+            <h3>DR.PAVITHRA</h3>
+            <p>DMO</p>
+          </div>
+          <div class="doc-section-icons">
+            <span><i class="fa-solid fa-user-doctor"></i></span>
+            <span><i class="fa-solid fa-stethoscope"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide-section">
+      <h2>Accepted Insurance Plans</h2>
+      <p>We proudly partner with trusted insurance providers</p>
+
+      <div class="slider-wrapper">
+        <div class="slider-track" id="sliderTrack">
+          <!-- 13 logos -->
+          <img src="./img/b (1).jpg" alt="" />
+          <img src="./img/b (2).jpg" alt="" />
+          <img src="./img/b (3).jpg" alt="" />
+          <img src="./img/b (4).jpg" alt="" />
+          <img src="./img/b (5).jpg" alt="" />
+          <img src="./img/b (6).jpg" alt="" />
+          <img src="./img/b (7).jpg" alt="" />
+          <img src="./img/b (8).jpg" alt="" />
+          <img src="./img/b (9).jpg" alt="" />
+          <img src="./img/b (10).jpg" alt="" />
+          <img src="./img/b (11).jpg" alt="" />
+          <img src="./img/b (12).jpg" alt="" />
+          <img src="./img/b (13).jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- Column 1 -->
+      <div class="footer-column footer-logo">
+        <img src="./img/prolife-logo.png" alt="Prolife Hospital Logo" />
+        <p>
+          River View Enclave, No:1, 1st Street, IAS, IPS Colony,<br />
+          Manapakkam, Chennai, Tamil Nadu 600125<br /><br />
+          Prolife Women's Centre No:4, Krishnaveni Nagar,<br />
+          Mugalivakkam, Chennai, Tamil Nadu 600125
+        </p>
+        <p><strong>Call Us:</strong> 8220305887 / 7305737051 / 9790896211</p>
+        <p><strong>Mail:</strong> prolifehospitalg@gmail.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-youtube-play"></i></a>
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <a href="#">Our History</a><br />
+        <a href="#">Obstetrics</a><br />
+        <a href="#">Gynecology</a><br />
+        <a href="#">Our Doctors</a><br />
+        <a href="#">Contact Us</a>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0957736371614!2d80.168301!3d12.985304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267a9301e55e7%3A0xd62a9ef9c0c358a!2sProlife%20maternity%20%26%20fertility%20hospital!5e0!3m2!1sen!2sin!4v1681467403452!5m2!1sen!2sin"
+            width="100%"
+            height="180"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-column">
+        <h4>Quick Contact</h4>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Mobile Number" required />
+          <input type="text" placeholder="Subject" />
+          <textarea rows="4" placeholder="Your message (optional)"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      Copyright © 2025.
+      <a style="color: #fff" href="https://www.prolifehospitals.com/"
+        >Prolife Hospital</a
+      >
+      . All Rights Reserved. || Designed And devloped by
+      <a style="color: #fff" href="https://dgrowmarketing.com/"
+        >D-Grow Marketing agency</a
+      >
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- <div class="prolife-home">
       <div class="rectangle"></div>
       <div class="text-wrapper">Prolife Hospitals</div>
       <p class="as-a-multi-specialty">
@@ -298,29 +1002,6 @@
         class="gemini-generated"
         src="/img/gemini-generated-image-2zf6vo2zf6vo2zf6--1--1.png"
       />
-      <div class="group-34">
-        <img class="prolife-logo" src="/img/prolife-logo-1536x517--1--1.png" />
-        <div class="navbar">
-          <a href="./index.html" class="text-wrapper-24">Home</a>
-          <a href="./story.html" class="text-wrapper-24">Our Story</a>
-          <div class="frame">
-            <div class="text-wrapper-24">Services</div>
-            <img class="chevron-down" src="/img/chevron-down.svg" />
-          </div>
-          <div class="frame">
-            <div class="text-wrapper-24">Pages</div>
-            <img class="chevron-down" src="/img/chevron-down.svg" />
-          </div>
-          <div class="text-wrapper-24">Gallery</div>
-          <div class="text-wrapper-24">Contact Us</div>
-          <a href="./blogs.html" class="text-wrapper-24">blogs</a>
-        </div>
-        <div class="group-35">
-          <div class="rectangle-10"></div>
-          <div class="text-wrapper-25">Book Appointment</div>
-          <img class="calendar" src="/img/calendar.svg" />
-        </div>
-      </div>
-    </div>
+    </div> -->
   </body>
 </html>
