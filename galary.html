@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="story-hero-banner">
+      <img
+        src="./img/g-bg.webp"
+        alt="Our Story Banner"
+        class="story-hero-image"
+      />
+      <div class="story-hero-overlay">
+        <h1 class="story-hero-title">Gallery</h1>
+      </div>
+    </div>
+    <section class="gallery-section">
+      <div class="gallery-header">
+        <button class="gallery-btn active" id="patient-btn">
+          Happy Parents
+        </button>
+        <button class="gallery-btn" id="function-btn">
+          Inauguration Function
+        </button>
+      </div>
+
+      <div class="gallery-grid" id="gallery">
+        <!-- Default Happy Parents images -->
+        <div class="gallery-item">
+          <img src="./img/galary/g (1).webp" alt="Happy Parent" />
+          <div class="zoom-icon">&#128269;</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/galary/g (2).webp" alt="Happy Parent" />
+          <div class="zoom-icon">&#128269;</div>
+        </div>
+        <div class="gallery-item">
+          <img src="./img/galary/g (3).webp" alt="Happy Parent" />
+          <div class="zoom-icon">&#128269;</div>
+        </div>
+        <!-- Add up to 20+ images -->
+      </div>
+    </section>
+
+    <!-- Lightbox Popup -->
+    <div class="lightbox" id="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Zoomed Image" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

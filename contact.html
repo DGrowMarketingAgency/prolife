@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="story-hero-banner">
+      <img
+        src="./img/download (1).webp"
+        alt="Our Story Banner"
+        class="story-hero-image"
+      />
+      <div class="story-hero-overlay">
+        <h1 class="story-hero-title">Contact us</h1>
+      </div>
+    </div>
+
+    <!-- ======= CONTACT FORM SECTION ======= -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h2>Book your Appointment now</h2>
+          <p>
+            Reach out to us at <strong>Prolife Hospitals</strong> for any
+            enquiries or appointments. Our team will respond promptly.
+          </p>
+
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+
+            <input
+              type="text"
+              name="location"
+              placeholder="Location"
+              required
+            />
+
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your Message..."
+              required
+            ></textarea>
+
+            <button type="submit" class="submit-btn">Send Now</button>
+          </form>
+          <p id="formStatus"></p>
+        </div>
+
+        <div class="contact-right">
+          <div class="info-box">
+            <span>📞</span>
+            <h4>Phone Number</h4>
+            <p>8220305887 / 7305737051 / 9790869211</p>
+          </div>
+
+          <div class="info-box">
+            <span>📧</span>
+            <h4>Email Address</h4>
+            <p>prolifehospitalog@gmail.com</p>
+          </div>
+
+          <div class="info-box">
+            <span>📍</span>
+            <h4>Our Location</h4>
+            <p>
+              River View Enclave, No:1,1st Street, IAS, IPS Colony, Manapakkam,
+              Chennai, Tamil Nadu 600125.
+            </p>
+            <p>
+              Prolife Women's Centre No.4, krishnaveni nagar, Mugalivakkam,
+              Chennai, Tamil Nadu 600125
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= GOOGLE MAP ======= -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1943.668105289018!2d80.181268!3d13.014249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5260c5f12c0001%3A0xb46d11c2707c2574!2sProlife%20maternity%20%26%20fertility%20hospital%20-%20Maternity%20%7C%20Infertility%20%7C%20Gynecology%20%7C%20General%20Surgeon%20in%20Chennai!5e0!3m2!1sen!2sin!4v1761895970569!5m2!1sen!2sin"
+        width="100%"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
