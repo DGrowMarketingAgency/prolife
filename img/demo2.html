@@ -3,250 +3,247 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prolife Hospital Footer</title>
+    <title>Abnormal Period Causes & Investigations</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
       body {
-        margin: 0;
         font-family: "Poppins", sans-serif;
-        background-color: #111;
-        color: #fff;
+        background: #fff;
+        margin: 0;
+        color: #333;
+        line-height: 1.6;
       }
 
-      footer {
-        background: linear-gradient(135deg, #1d1d1d 0%, #2c2c2c 100%);
-        padding: 60px 8%;
-        display: grid;
-        grid-template-columns: 1.3fr 1fr 1fr;
-        gap: 50px;
-        position: relative;
-        overflow: hidden;
+      .abnormal-section {
+        max-width: 1100px;
+        margin: 80px auto;
+        padding: 0 20px;
       }
 
-      /* Decorative overlay */
-      footer::before {
-        content: "";
-        position: absolute;
-        top: -100px;
-        right: -150px;
-        width: 300px;
-        height: 300px;
-        background: radial-gradient(
-          circle,
-          rgba(184, 144, 41, 0.2) 0%,
-          transparent 70%
-        );
-        z-index: 0;
+      .abnormal-title-main {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #ffcb47;
+        text-transform: uppercase;
+        margin-bottom: 20px;
       }
 
-      .footer-column {
-        position: relative;
-        z-index: 2;
-      }
-
-      .footer-logo img {
-        width: 150px;
+      /* TAB BUTTONS */
+      .abnormal-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         margin-bottom: 15px;
       }
 
-      .footer-column h4 {
-        color: #ffcc4a;
-        margin-bottom: 20px;
-        font-size: 1.2rem;
-        position: relative;
-      }
-
-      .footer-column h4::after {
-        content: "";
-        display: block;
-        width: 40px;
-        height: 3px;
-        background: #b89029;
-        margin-top: 6px;
-      }
-
-      .footer-column p,
-      .footer-column a {
-        color: #ccc;
-        font-size: 0.95rem;
-        line-height: 1.7;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-
-      .footer-column a:hover {
-        color: #ffcc4a;
-        transform: translateX(4px);
-      }
-
-      .social-icons {
-        margin-top: 15px;
-      }
-
-      .social-icons a {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        background: #222;
-        color: #ffcc4a;
-        margin-right: 8px;
-        text-align: center;
-        line-height: 35px;
-        border-radius: 50%;
+      .abnormal-tab {
+        background: transparent;
+        border: 2px solid #ffcb47;
+        color: #000;
+        font-weight: 600;
+        padding: 10px 18px;
+        border-radius: 30px;
+        cursor: pointer;
         transition: 0.3s;
       }
 
-      .social-icons a:hover {
-        background: #b89029;
+      .abnormal-tab:hover,
+      .abnormal-tab.active {
+        background: #ffcb47;
+        color: #000;
+      }
+
+      /* CONTENT BOX */
+      .abnormal-content-box {
+        background: #1e1e1e;
         color: #fff;
-        transform: scale(1.1);
+        border-radius: 10px;
+        padding: 25px;
+        display: none;
+        animation: fadeIn 0.4s ease-in-out;
       }
 
-      .map {
-        margin-top: 20px;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 0 12px rgba(255, 204, 74, 0.2);
+      .abnormal-content-box.active {
+        display: block;
       }
 
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        margin-bottom: 12px;
-        padding: 10px 12px;
-        border: none;
-        border-radius: 6px;
-        background: #333;
-        color: #fff;
-        font-size: 0.9rem;
-        outline: none;
-        transition: background 0.3s;
+      .abnormal-content-box p {
+        margin: 0;
+        font-size: 1rem;
+        color: #ddd;
       }
 
-      .contact-form input:focus,
-      .contact-form textarea:focus {
-        background: #444;
+      /* Divider Between Sections */
+      .abnormal-divider {
+        height: 2px;
+        background: #eee;
+        margin: 60px 0;
       }
 
-      .contact-form button {
-        background: #b89029;
-        color: #fff;
-        padding: 10px 0;
-        border: none;
-        width: 100%;
-        border-radius: 6px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.3s;
-      }
-
-      .contact-form button:hover {
-        background: #ffcc4a;
-        color: #111;
-      }
-
-      .footer-bottom {
-        background: #0a0a0a;
-        text-align: center;
-        padding: 15px;
-        font-size: 0.9rem;
-        color: #aaa;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      @media (max-width: 900px) {
-        footer {
-          grid-template-columns: 1fr;
-          gap: 40px;
-          text-align: center;
+      /* Responsive */
+      @media (max-width: 768px) {
+        .abnormal-title-main {
+          font-size: 1.4rem;
         }
-
-        .footer-column h4::after {
-          margin: 6px auto 0;
+        .abnormal-tab {
+          font-size: 0.9rem;
+          padding: 8px 14px;
         }
+        .abnormal-content-box p {
+          font-size: 0.9rem;
+        }
+      }
 
-        .social-icons a {
-          margin: 5px;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
       }
     </style>
   </head>
+
   <body>
-    <footer>
-      <!-- Column 1 -->
-      <div class="footer-column footer-logo">
-        <img
-          src="https://i.ibb.co/fx3H9h4/prolife-logo.png"
-          alt="Prolife Hospital Logo"
-        />
-        <p>
-          River View Enclave, No:1, 1st Street, IAS, IPS Colony,<br />
-          Manapakkam, Chennai, Tamil Nadu 600125<br /><br />
-          Prolife Women's Centre No:4, Krishnaveni Nagar,<br />
-          Mugalivakkam, Chennai, Tamil Nadu 600125
-        </p>
-        <p><strong>Call Us:</strong> 8220305887 / 7305737051 / 9790896211</p>
-        <p><strong>Mail:</strong> prolifehospitalg@gmail.com</p>
-        <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook-f"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-youtube-play"></i></a>
-          <a href="#"><i class="fa fa-whatsapp"></i></a>
+    <section class="abnormal-section">
+      <!-- POSSIBLE CAUSES -->
+      <h2 class="abnormal-title-main">POSSIBLE CAUSE MAY INCLUDE:</h2>
+
+      <div class="abnormal-tabs" id="causeTabs">
+        <button class="abnormal-tab active">Hormonal</button>
+        <button class="abnormal-tab">Uterine Fibroids</button>
+        <button class="abnormal-tab">Uterine / Endometrial Polyps</button>
+        <button class="abnormal-tab">Adenomyosis</button>
+        <button class="abnormal-tab">Rare Causes</button>
+      </div>
+
+      <div class="abnormal-contents" id="causeContents">
+        <div class="abnormal-content-box active">
+          <p>
+            <strong>Hormonal:</strong> Disturbances of hormonal secretion in the
+            body can cause an abnormal build-up of the lining of the uterus,
+            which then breaks down leading to heavy menstrual loss. Common
+            examples include PCOS or thyroid disorders.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Uterine Fibroids:</strong> Non-cancerous growths that
+            develop in or around the uterus, which can cause heavy bleeding and
+            pelvic pain.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Uterine / Endometrial Polyps:</strong> Small, soft growths
+            on the inner wall of the uterus that can lead to irregular or heavy
+            menstrual bleeding.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Adenomyosis:</strong> A condition where the inner lining of
+            the uterus grows into the uterine wall, causing painful, heavy
+            periods and cramping.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Rare Causes:</strong> Include clotting disorders, certain
+            medications, and endometrial cancer, which may require further
+            evaluation.
+          </p>
         </div>
       </div>
 
-      <!-- Column 2 -->
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <a href="#">Our History</a><br />
-        <a href="#">Obstetrics</a><br />
-        <a href="#">Gynecology</a><br />
-        <a href="#">Our Doctors</a><br />
-        <a href="#">Contact Us</a>
+      <div class="abnormal-divider"></div>
 
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0957736371614!2d80.168301!3d12.985304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267a9301e55e7%3A0xd62a9ef9c0c358a!2sProlife%20maternity%20%26%20fertility%20hospital!5e0!3m2!1sen!2sin!4v1681467403452!5m2!1sen!2sin"
-            width="100%"
-            height="180"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          >
-          </iframe>
+      <!-- INVESTIGATIONS -->
+      <h2 class="abnormal-title-main">INVESTIGATIONS MAY INCLUDE:</h2>
+
+      <div class="abnormal-tabs" id="investigationTabs">
+        <button class="abnormal-tab active">Pelvic Examination</button>
+        <button class="abnormal-tab">Blood Tests</button>
+        <button class="abnormal-tab">Pelvic Ultrasound</button>
+        <button class="abnormal-tab">Endometrial Biopsy</button>
+        <button class="abnormal-tab">Hysteroscopy and Curettage</button>
+      </div>
+
+      <div class="abnormal-contents" id="investigationContents">
+        <div class="abnormal-content-box active">
+          <p>
+            <strong>Pelvic Examination:</strong> Used to assess the size of the
+            uterus. Pap smear and swabs may be done at the same time to rule out
+            infections or abnormalities.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Blood Tests:</strong> Help check for anaemia, thyroid
+            problems, or hormonal imbalances that could contribute to abnormal
+            bleeding.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Pelvic Ultrasound:</strong> Imaging test to check for
+            fibroids, cysts, or structural abnormalities in the uterus and
+            ovaries.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Endometrial Biopsy:</strong> A small tissue sample is taken
+            from the lining of the uterus to check for abnormal cells or
+            infection.
+          </p>
+        </div>
+
+        <div class="abnormal-content-box">
+          <p>
+            <strong>Hysteroscopy and Curettage:</strong> Allows direct
+            visualization of the uterine cavity with a small camera to remove or
+            sample tissue if needed.
+          </p>
         </div>
       </div>
+    </section>
 
-      <!-- Column 3 -->
-      <div class="footer-column">
-        <h4>Quick Contact</h4>
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <input type="text" placeholder="Mobile Number" required />
-          <input type="text" placeholder="Subject" />
-          <textarea rows="4" placeholder="Your message (optional)"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </footer>
+    <script>
+      function setupTabs(tabContainerId, contentContainerId) {
+        const tabs = document
+          .getElementById(tabContainerId)
+          .querySelectorAll(".abnormal-tab");
+        const contents = document
+          .getElementById(contentContainerId)
+          .querySelectorAll(".abnormal-content-box");
 
-    <div class="footer-bottom">
-      Copyright © 2024. Prolife Hospital. All Rights Reserved.
-    </div>
+        tabs.forEach((tab, i) => {
+          tab.addEventListener("click", () => {
+            tabs.forEach((t) => t.classList.remove("active"));
+            contents.forEach((c) => c.classList.remove("active"));
 
-    <!-- Font Awesome CDN -->
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+            tab.classList.add("active");
+            contents[i].classList.add("active");
+          });
+        });
+      }
+
+      setupTabs("causeTabs", "causeContents");
+      setupTabs("investigationTabs", "investigationContents");
+    </script>
   </body>
 </html>

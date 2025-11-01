@@ -261,4 +261,34 @@ document.addEventListener("DOMContentLoaded", () => {
     // Default: load patient images
     loadImages(patientImages);
   }
+  function setupTabs(tabContainerId, contentContainerId) {
+    const tabs = document
+      .getElementById(tabContainerId)
+      .querySelectorAll(".abnormal-tab");
+    const contents = document
+      .getElementById(contentContainerId)
+      .querySelectorAll(".abnormal-content-box");
+
+    tabs.forEach((tab, i) => {
+      tab.addEventListener("click", () => {
+        tabs.forEach((t) => t.classList.remove("active"));
+        contents.forEach((c) => c.classList.remove("active"));
+
+        tab.classList.add("active");
+        contents[i].classList.add("active");
+      });
+    });
+  }
+
+  setupTabs("causeTabs", "causeContents");
+  setupTabs("investigationTabs", "investigationContents");
+});
+const items = document.querySelectorAll(".contracept-item");
+
+items.forEach((item) => {
+  const btn = item.querySelector(".contracept-title");
+  btn.addEventListener("click", () => {
+    items.forEach((i) => i.classList.remove("active"));
+    item.classList.add("active");
+  });
 });

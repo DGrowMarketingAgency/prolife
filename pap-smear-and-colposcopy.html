@@ -141,6 +141,75 @@
         <h1 class="story-hero-title"></h1>
       </div>
     </div>
+    <section class="pap-section">
+      <div class="pap-container">
+        <h2 class="pap-title">What are Pap Smear and Colposcopy?</h2>
+
+        <p class="pap-description">
+          The Pap Smear, also known as a Pap test, is a simple yet powerful
+          screening procedure. Our website will walk you through the process,
+          ensuring you understand its importance. Early detection through the
+          Pap Smear is a cornerstone of intervention and better health outcomes,
+          empowering you to take charge of your health.
+        </p>
+
+        <p class="pap-description">
+          In cases where the Pap Smear indicates abnormal results, our website
+          offers an in-depth explanation of the follow-up procedure called
+          Colposcopy. Understanding the role of a colposcope, a specialized
+          magnifying instrument, in identifying cervical abnormalities is
+          crucial for making informed decisions about your health.
+        </p>
+
+        <div class="pap-divider"></div>
+
+        <h3 class="pap-subtitle">
+          Treatments / Procedures for Pap Smear and Colposcopy
+        </h3>
+
+        <div class="pap-tabs" id="papTabs">
+          <button class="pap-tab active">Pap Smear</button>
+          <button class="pap-tab">Colposcopy</button>
+        </div>
+
+        <div class="pap-contents" id="papContents">
+          <div class="pap-content-box active">
+            <p>
+              <strong>Pap Smear:</strong> The procedure involves a healthcare
+              provider collecting cells from the cervix during a pelvic exam.
+              The collected sample is then examined under a microscope to detect
+              any abnormal changes in the cervical cells. If abnormal cells are
+              found, further diagnostic tests or treatments may be recommended
+              based on the severity of the abnormalities.
+            </p>
+          </div>
+
+          <div class="pap-content-box">
+            <p>
+              <strong>Colposcopy:</strong> If the Pap Smear results indicate
+              abnormal findings, a colposcopy is performed. During this
+              procedure, a colposcope is used to magnify the cervix, allowing
+              the healthcare provider to closely examine any suspicious areas.
+              In some cases, a biopsy may be taken during the colposcopy to
+              further evaluate and diagnose the cervical abnormalities.
+              Treatment options may include watchful waiting, medical
+              interventions, or surgical procedures, depending on the severity
+              of the findings.
+            </p>
+          </div>
+        </div>
+
+        <div class="pap-divider"></div>
+
+        <p class="pap-note">
+          At Prolife, we stress the significance of regular screenings. Our
+          tailored guidelines, designed for different age groups and medical
+          histories, empower women to stay proactive about their health. Early
+          detection is key to successful treatment, and we want to equip you
+          with this knowledge.
+        </p>
+      </div>
+    </section>
     <footer>
       <!-- Column 1 -->
       <div class="footer-column footer-logo">
@@ -209,5 +278,21 @@
     </div>
 
     <script src="./script.js"></script>
+    <script>
+      const papTabs = document.querySelectorAll("#papTabs .pap-tab");
+      const papContents = document.querySelectorAll(
+        "#papContents .pap-content-box"
+      );
+
+      papTabs.forEach((tab, i) => {
+        tab.addEventListener("click", () => {
+          papTabs.forEach((t) => t.classList.remove("active"));
+          papContents.forEach((c) => c.classList.remove("active"));
+
+          tab.classList.add("active");
+          papContents[i].classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
