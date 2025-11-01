@@ -166,7 +166,7 @@ body {
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .story-hero-banner {
-    height: 250px;
+    height: 380px;
   }
 
   .story-hero-title {
@@ -1805,3 +1805,409 @@ footer::before {
     display: block;
   }
 }
+.section-boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.section-boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+}
+
+.section-boxes-card {
+  position: relative;
+  flex: 1 1 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-boxes-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.section-boxes-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.65);
+}
+
+.section-boxes-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-boxes-overlay h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.section-boxes-card:hover .section-boxes-overlay h3 {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-boxes-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .section-boxes-card {
+    flex: 1 1 100%;
+  }
+
+  .section-boxes-overlay h3 {
+    font-size: 1.3rem;
+  }
+}
+.fetal-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.fetal-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+}
+
+.fetal-section-content {
+  flex: 1 1 550px;
+}
+
+.fetal-section-title {
+  color: #e7a42b;
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.fetal-section-text {
+  color: #555;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.fetal-section-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.fetal-section-image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Subcontent section */
+.fetal-section-subcontent {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fetal-section-subtitle {
+  color: #e7a42b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .fetal-section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fetal-section-title {
+    font-size: 2rem;
+  }
+
+  .fetal-section-image img {
+    max-width: 100%;
+  }
+}
+.ultrasound-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.ultrasound-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ultrasound-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ultrasound-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.ultrasound-card:hover img {
+  transform: scale(1.08);
+  filter: brightness(0.65);
+}
+
+.ultrasound-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ultrasound-overlay h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ultrasound-card:hover .ultrasound-overlay h3 {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* Text Section */
+.ultrasound-text-section {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+.ultrasound-subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ultrasound-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ultrasound-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .ultrasound-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .ultrasound-description {
+    font-size: 0.95rem;
+  }
+}
+/* ===== SURGERY SECTION ===== */
+.surgery-section {
+  background: #f8f9fb;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.surgery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.surgery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background: #000;
+}
+
+.surgery-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.surgery-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.surgery-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.4);
+  transition: background 0.4s ease;
+}
+
+.surgery-card:hover .surgery-overlay {
+  background: rgba(10, 10, 10, 0.65);
+}
+
+.surgery-title {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Hover glow effect */
+.surgery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .surgery-title {
+    font-size: 1rem;
+  }
+
+  .surgery-card img {
+    height: 200px;
+  }
+}
+/* ===== LAB TEXT SECTION ===== */
+.lab-text-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+.lab-text-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.lab-text-intro {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+.lab-text-heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lab-text-block {
+  margin-bottom: 35px;
+}
+
+.lab-text-subheading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.lab-text-paragraph {
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* Subtle fade animation */
+.lab-text-block,
+.lab-text-intro {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: lab-text-fade 0.8s ease forwards;
+}
+
+.lab-text-block:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.lab-text-block:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.lab-text-block:nth-child(4) {
+  animation-delay: 0.7s;
+}
+
+@keyframes lab-text-fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media ;
